@@ -1,0 +1,30 @@
+<!-- templates/result.html -->
+{% extends 'base.html' %}
+
+{% block title %}Download Result{% endblock %}
+
+{% block content %}
+<div class="row">
+    <span class="card-title"><h3><center>Video Download Result</center></h3></span>
+    <br>
+    <br>
+
+    <br>
+    <br>
+
+    <div class="col s12 m8 offset-m2">
+        <div class="card">
+            <div class="card-content">
+                {% if video_url %}
+                    <p><center>Click the link below to download your video:</center></p>
+                    <br>
+                    <center><p><a href="{{ video_url }}" download class="waves-effect waves-light btn">Download Video</a></p></center>
+                    <br>
+                {% else %}
+                    <p>Failed to fetch video URL</p>
+                {% endif %}
+                <a href="/" class="waves-effect waves-light btn">Back to Home</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

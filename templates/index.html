@@ -1,0 +1,163 @@
+<!-- templates/index.html -->
+{% extends 'base.html' %}
+
+{% block title %}Pinterest Video Downloader{% endblock %}
+
+{% block content %}
+
+<!--
+<nav>
+    <div>
+        <ul class="left hide-on-med-and-down">
+            <li><a href="/">PinVideoDownloader</a></li>
+        </ul>
+
+        <ul class="right hide-on-med-and-down">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Privacy Policy</a></li>
+        </ul>
+
+            
+
+    </div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+    <li><a href="/">Home</a></li>
+</ul>
+-->
+
+<div class="row">
+    <span class="card-title"><h3><center>Pinterest Video Downloader</center></h3></span>
+    <span class="card-title"><h4><center>Download Pinterest video, Image and Gif online
+    </center></h4></span>
+
+    <br><br>
+    <br><br>
+    <br><br>
+
+    <div class="col s12 m8 offset-m2">
+        <div class="card">
+            <div class="card-content">
+                
+                <form action="/download" method="post">
+                    <div class="input-field">
+                        <label for="page_url">Enter Pinterest Page URL:</label>
+                        <input type="text" id="page_url" name="page_url" required>
+                    </div>
+                    <center><button class="btn waves-effect waves-light" type="submit">Download Video
+                        <i class="material-icons right"></i>
+                    </button>
+                    <!--class="btn waves-effect waves-light"-->
+                </center>
+                </form>
+                <br>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<span class="card-title"><h4><center>Pinterest Video Downloader</center></h4></span>
+<br><p><font size="4"><center>Pinterest Downloader is a free Pinterest video downloader online tool. You can also download Pinterest Images and Gif directly to your computer, tablet or mobile by using Pinterest Downloader. You can save and download Pinterest Videos in High definition MP4 format and also download Pinterest Images in HD JPG format with PinterestDownloader.com. why we developed Pinterest Downloader? because we noticed that Pinterest does not allow to download videos. Due to which people were facing a lot of trouble in downloading Pinterest videos. Pinterest Downloader is a solution for those who want to download Pinterest videos for the free and easy way.</center></p>
+</font>
+<br>
+
+<span class="card-title"><h4><center>How to download Pinterest Videos, Images or Gif</center></h4></span>
+<br><p><font size="4">Pinterest Downloader is easy-to-use for you. You can easily download videos from Pinterest without any limitations. Also, you do not need any registration or to pay a fee for the download. This tool is completely free. Follow the simple steps below to download Pinterest videos online.
+    </font>
+    <br><p> • Open Pinterest App and select the video or image or gif which you want to download.
+    </p>
+    <p> • Tap on ••• icon at the top right corner of the Pinterest app if you are using the latest version of the Pinterest app then Tap on ••• icon at the bottom right corner of the app. After taping ••• icon then tap on the copy link.
+    </p>
+    <p> • Paste the video Url in the Download Input Box, and Tap on Download button.
+        </p>
+    <p>• You can see the preview of your download file and there Download button just below it.
+
+    </p>
+    <p>
+        • Tap on the Download button to download. Pinterest video or image or gif will be download to your device.
+    </p>
+    <br>
+    <span class="card-title"><h4><center>Frequently Asked Questions
+    </center></h4></span>
+    <br>
+
+    <h5><b>Do I need to register an account to download videos?</b>
+    </h5>
+
+    <p>No, you do not need an account to download videos or images or Gif.
+
+    </p>
+
+    <h5><b>Is PinterestDownloader safe for my device?
+    </b>
+    </h5>
+
+    <p>Yes, Our first priority is our user's safety. PinterestDownloader is completely safe to download. No virus, No malware
+
+    </p>
+
+    <h5><b>Where is the video saved after download?
+    </b>
+    </h5>
+
+    <p>If you're using a smartphone, check your browser's default download path.
+
+
+    </p>
+
+
+    <p> If you are using Windows, then press Ctrl + J on the keyboard to see the download history.</p>
+    
+    <p>If you are using Mac, then press Cmd + Shift + J on the keyboard to see the download history.
+
+    </p>
+
+    <h5><b>Does PinterestDownloader track a user's downloaded video?
+    </b>
+    </h5>
+
+    <p>No, PinterestDownloader does not store downloaded videos. All videos are hosted on Pinterest servers and we do not store the download history of viewers. Everyone can use this tool anonymously. This Tool is 100% safe for viewers.
+
+    </p>
+
+    <h5><b>Is Pinterest Video Downloader free?
+
+    </b>
+    </h5>
+
+    <p>Yes! And it always will be. We are happy to help people with our tool.
+
+
+    </p>
+
+
+    <h5><b>Is there a limit to the number of videos I can download?
+
+
+    </b>
+    </h5>
+
+    <p>No, there is no limit to download videos. You are downloading unlimited videos without any limit.
+
+
+
+
+    </p>
+
+    <footer >
+        <div class="footer-content">
+        <p><center><h5>&copy; 2023 Pinterest Video Downloader</h5></center></p>
+    </div>
+      </footer>
+
+<script>
+    document.getElementById('downloadForm').addEventListener('submit', function() {
+        // Show loading bar when the form is submitted
+        document.getElementById('loadingBar').style.display = 'block';
+        // Disable the download button to prevent multiple submissions
+        document.getElementById('downloadBtn').disabled = true;
+    });
+    </script>
+{% endblock %}
